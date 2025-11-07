@@ -25,23 +25,28 @@
     <section id="home" class="hero">
         <div class="hero-content">
              
-            <div id="parallax-bg">
-                <img src="aditya.png" alt="">
+            <div class="avatar">
+                <img src="adityapic1.png" alt="">
             </div>
-            <div class="content">
-                <h1 class="creative-text">Aditya Dixit</h1>
-                <h2 class="portfolio-text">PORTFOLIO</h2>
-    
             <div class="status">
                 <span class="status-dot"></span>
                 Available for opportunities
             </div>
+            <h1 class="creative-text">Aditya Dixit</h1>
+                <h2 class="portfolio-text">PORTFOLIO</h2>
             <p class="subtitle">I'm an independent data analyst.</p>
             <p class="description">
                 My interest lies in transforming data into actionable insights, 
                 helping organizations make informed decisions through advanced analytics and visualization.
             </p>
-            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    ✨ Let's talk
+                </a>
+                <a href="#works" class="btn btn-secondary">
+                    View My Work →
+                </a>
+            </div>
         </div>
     </section>
     <!-- Add this section after the Hero section and before the Works section -->
@@ -266,12 +271,12 @@
                 <div class="skill-card">
                     <div class="skill-icon">📊</div>
                     <h3>Data Visualization</h3>
-                    <p>Power BI, Python</p>
+                    <p>Power BI, Tableau, Python</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🤖</div>
                     <h3>Machine Learning</h3>
-                    <p>Scikit-learn, TensorFlow (About to)</p>
+                    <p>Scikit-learn, TensorFlow</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">💾</div>
@@ -281,7 +286,7 @@
                 <div class="skill-card">
                     <div class="skill-icon">📈</div>
                     <h3>Statistical Analysis</h3>
-                    <p> Python, Excel</p>
+                    <p>R, Python, Excel</p>
                 </div>
             </div>
         </div>
@@ -416,18 +421,6 @@ document.addEventListener('keydown', function(event) {
     closeFullscreen();
   }
 });
-
-window.addEventListener('scroll', function() {
-    var scrolled = window.scrollY;
-    var parallax = document.getElementById('parallax-bg');
-    // Move background slower than scroll
-    parallax.style.transform = 'translateY(' + (scrolled * 0.5) + 'px)';
-    // Optional: fade image as you scroll
-    var opacity = 1 - scrolled / 600;
-    parallax.style.filter = 'brightness(' + (Math.max(opacity, 0.3)) + ')';
-});
     </script>
 </body>
 </html>
-
-
